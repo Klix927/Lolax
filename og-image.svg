@@ -1,0 +1,35 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#0f0f0f"/>
+
+  <!-- Subtle grid accent -->
+  <rect width="1200" height="2" y="314" fill="#1e1e1e"/>
+  <rect width="2" height="630" x="599" fill="#1e1e1e"/>
+
+  <!-- Logo mark (scaled up ~18x from 15x23) -->
+  <rect x="140" y="108" width="54"  height="414" rx="27" fill="#4D9478"/>
+  <rect x="140" y="108" width="216" height="54"  rx="27" fill="#4D9478"/>
+  <rect x="140" y="468" width="216" height="54"  rx="27" fill="#4D9478"/>
+
+  <!-- Wordmark: LOLAX -->
+  <text
+    x="400"
+    y="310"
+    font-family="'Jost', 'Helvetica Neue', Arial, sans-serif"
+    font-weight="300"
+    font-size="120"
+    letter-spacing="28"
+    fill="#f0f0f0"
+  >LOLAX</text>
+
+  <!-- Tagline -->
+  <text
+    x="400"
+    y="390"
+    font-family="'Jost', 'Helvetica Neue', Arial, sans-serif"
+    font-weight="300"
+    font-size="32"
+    letter-spacing="4"
+    fill="#888888"
+  >Software von Felix Kempf · Leipzig</text>
+</svg>

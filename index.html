@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Lolax – Software von Felix Kempf</title>
+  <meta name="description" content="Lolax entwickelt eigenständige Softwareprodukte aus Leipzig. Erstes angekündigtes Produkt: HP Psych Trainer. Weitere Anwendungen folgen.">
+
+  <!-- Open Graph -->
+  <meta property="og:title"       content="Lolax – Software von Felix Kempf">
+  <meta property="og:description" content="Eigenständige Softwareprodukte, entwickelt unter einem gemeinsamen Namen. Erstes angekündigtes Produkt: HP Psych Trainer.">
+  <meta property="og:type"        content="website">
+  <meta property="og:url"         content="https://lolax.de/">
+  <meta property="og:locale"      content="de_DE">
+  <meta property="og:image"        content="https://lolax.de/og-image.png">
+  <meta property="og:image:secure_url" content="https://lolax.de/og-image.png">
+  <meta property="og:image:type"   content="image/png">
+  <meta property="og:image:width"  content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt"    content="Lolax Logo und Schriftzug auf dunklem Hintergrund">
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:image"       content="https://lolax.de/og-image.png">
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="canonical" href="https://lolax.de/">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Prevent flash of wrong theme -->
+  <script>
+    (function(){
+      try {
+        var t = localStorage.getItem('lolax-theme') ||
+          (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', t);
+      } catch(e){}
+    })();
+  </script>
+</head>
+<body>
+
+  <!-- Skip link for accessibility -->
+  <a href="#main-content" class="skip-link">Zum Hauptinhalt springen</a>
+
+  <!-- ═══════════════════════════════════════════
+       HEADER
+  ════════════════════════════════════════════ -->
+  <header class="header" role="banner">
+    <div class="container">
+      <div class="header__inner">
+
+        <!-- Logo -->
+        <a href="/" class="logo" aria-label="Lolax – Startseite">
+          <span class="logo__mark" aria-hidden="true">
+            <svg width="15" height="23" viewBox="0 0 15 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="0"   y="0"  width="3" height="23" rx="1.5" fill="currentColor"/>
+              <rect x="0"   y="0"  width="12" height="3" rx="1.5" fill="currentColor"/>
+              <rect x="0"   y="20" width="12" height="3" rx="1.5" fill="currentColor"/>
+            </svg>
+          </span>
+          <span class="logo__wordmark">LOLAX</span>
+        </a>
+
+        <!-- Navigation -->
+        <nav class="nav" aria-label="Hauptnavigation">
+          <ul class="nav__list" id="nav-list" role="list">
+            <li><a href="#ueber-lolax" class="nav__link">Über Lolax</a></li>
+            <li><a href="#produkte"    class="nav__link">Produkte</a></li>
+            <li><a href="#kontakt"     class="nav__link">Kontakt</a></li>
+          </ul>
+
+          <!-- Theme toggle -->
+          <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Dunkles Design aktivieren">
+            <span class="theme-toggle__icon" aria-hidden="true">○</span>
+            <span class="theme-toggle__label">Dunkel</span>
+          </button>
+
+          <!-- Hamburger (mobile) -->
+          <button
+            class="nav__hamburger"
+            id="nav-hamburger"
+            type="button"
+            aria-label="Navigation öffnen"
+            aria-expanded="false"
+            aria-controls="nav-list"
+          >
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true">
+              <line x1="3" y1="7"  x2="19" y2="7"/>
+              <line x1="3" y1="15" x2="19" y2="15"/>
+            </svg>
+          </button>
+        </nav>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- ═══════════════════════════════════════════
+       MAIN
+  ════════════════════════════════════════════ -->
+  <main id="main-content">
+
+    <!-- ─── HERO ─────────────────────────────── -->
+    <section class="section hero" aria-labelledby="hero-heading">
+      <div class="container">
+
+        <p class="hero__kicker" aria-label="Softwareprodukte aus Leipzig">Softwareprodukte aus Leipzig</p>
+
+        <h1 class="hero__headline reveal" id="hero-heading">
+          Software,<br>die bleibt.
+        </h1>
+
+        <p class="hero__sub reveal d1">
+          Lolax entwickelt eigenständige Softwareprodukte.<br>
+          Das erste angekündigte Produkt ist der <strong>HP Psych Trainer</strong>.<br>
+          Weitere Anwendungen folgen.
+        </p>
+
+        <a href="#produkte" class="hero__cta reveal d2">
+          Produkte ansehen
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="2" y1="8" x2="14" y2="8"/>
+            <polyline points="9,3 14,8 9,13"/>
+          </svg>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- ─── ÜBER LOLAX ───────────────────────── -->
+    <section class="section" id="ueber-lolax" aria-labelledby="about-heading">
+      <div class="container">
+        <div class="about__grid">
+
+          <div>
+            <h2 class="about__title reveal" id="about-heading">Was ist Lolax?</h2>
+            <p class="about__text reveal d1">
+              Lolax ist ein Einzelunternehmen aus Leipzig. Der Plan ist einfach:
+              eigene Softwareprodukte entwickeln und unter einer konsistenten
+              Marke veröffentlichen.
+            </p>
+            <p class="about__text reveal d1" style="margin-top: 1rem;">
+              Kein Startup-Hype, keine leeren Versprechen. Wenn ein Produkt
+              erscheint, ist es fertig. Bis dahin wird gearbeitet.
+            </p>
+          </div>
+
+          <div class="about__meta reveal d2">
+            <div class="about__meta-item">
+              <span class="about__meta-label">Inhaber</span>
+              <span class="about__meta-value">Felix Kempf</span>
+            </div>
+            <div class="about__meta-item">
+              <span class="about__meta-label">Standort</span>
+              <span class="about__meta-value">Leipzig, Deutschland</span>
+            </div>
+            <div class="about__meta-item">
+              <span class="about__meta-label">Fokus</span>
+              <span class="about__meta-value">Eigenentwicklung von Software</span>
+            </div>
+            <div class="about__meta-item">
+              <span class="about__meta-label">Status</span>
+              <span class="about__meta-value">Erstes Produkt in Vorbereitung</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── PRODUKTE ─────────────────────────── -->
+    <section class="section section--alt" id="produkte" aria-labelledby="products-heading">
+      <div class="container">
+
+        <header class="products__header">
+          <h2 class="products__title reveal" id="products-heading">Produkte</h2>
+          <p class="products__desc reveal d1">
+            Aktuell befindet sich das erste Produkt in Entwicklung.<br>
+            Weitere Anwendungen werden folgen.
+          </p>
+        </header>
+
+        <div class="products__grid">
+
+          <!-- HP Psych Trainer – angekündigt -->
+          <article class="product-card product-card--featured reveal" aria-label="HP Psych Trainer, angekündigt">
+            <span class="badge badge--soon">
+              <span class="badge__dot" aria-hidden="true"></span>
+              Angekündigt
+            </span>
+            <h3 class="product-card__name">HP Psych Trainer</h3>
+            <p class="product-card__desc">
+              Lernsoftware zur Vorbereitung auf die Prüfung zum
+              Heilpraktiker für Psychotherapie. Weitere Details zu
+              Funktion und Veröffentlichung folgen.
+            </p>
+            <p class="product-card__foot">Bald verfügbar</p>
+          </article>
+
+        </div>
+        <p class="products__more reveal d1">Weitere Produkte befinden sich in früher Entwicklung. Details folgen zu gegebener Zeit.</p>
+      </div>
+    </section>
+
+    <!-- ─── WIE LOLAX ARBEITET ───────────────── -->
+    <section class="section" aria-labelledby="focus-heading">
+      <div class="container">
+        <div class="focus__inner">
+          <h2 class="focus__title reveal" id="focus-heading">Wie Lolax arbeitet</h2>
+          <p class="focus__lead reveal d1">
+            Kein Veröffentlichungsdruck, keine öffentlichen Betas.
+            Produkte erscheinen, wenn sie wirklich fertig sind.
+          </p>
+          <ul class="focus__list" role="list">
+            <li class="focus__item reveal d1">
+              <span class="focus__num" aria-hidden="true">01</span>
+              <span class="focus__text">Fertig bedeutet fertig. Kein Launch ohne vollständige Funktionalität und nachgewiesene Qualität.</span>
+            </li>
+            <li class="focus__item reveal d2">
+              <span class="focus__num" aria-hidden="true">02</span>
+              <span class="focus__text">Ein Produkt nach dem anderen. Fokus statt Parallelismus – jedes Produkt wird vollständig entwickelt, bevor das nächste beginnt.</span>
+            </li>
+            <li class="focus__item reveal d3">
+              <span class="focus__num" aria-hidden="true">03</span>
+              <span class="focus__text">Langfristige Nutzbarkeit. Software, die über den Launch hinaus gepflegt und weiterentwickelt wird.</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── KONTAKT ──────────────────────────── -->
+    <section class="section section--alt" id="kontakt" aria-labelledby="contact-heading">
+      <div class="container">
+        <div class="contact__inner">
+
+          <div>
+            <h2 class="contact__title reveal" id="contact-heading">Kontakt</h2>
+            <p class="contact__text reveal d1">
+              Bei Fragen, Feedback oder anderen Anliegen – einfach eine E-Mail schreiben.
+            </p>
+            <div class="contact__email-wrap reveal d2" id="xm0"></div>
+            <noscript><span class="contact__note">Kontakt auf Anfrage</span></noscript>
+            <p class="contact__note reveal d2">
+              Antwort in der Regel innerhalb weniger Werktage.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════════════════════════
+       FOOTER
+  ════════════════════════════════════════════ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__inner">
+        <p class="footer__copy">© 2026 Lolax &nbsp;·&nbsp; Felix Kempf &nbsp;·&nbsp; Leipzig</p>
+        <nav class="footer__links" aria-label="Rechtliche Links">
+          <a href="impressum.html"   class="footer__link">Impressum</a>
+          <a href="datenschutz.html" class="footer__link">Datenschutz</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script src="obf-util.js"></script>
+  <script>
+  (function(){
+    if (!window._lx) return;
+    var _t = ['fe','lix','-ke','mpf','@','outl','ook','.com'];
+    var _o = [0,1,2,3,4,5,6,7];
+    window._lx.v('xm0', _t, _o, 'mail'+'to:');
+  })();
+  </script>
+  <script src="main.js"></script>
+</body>
+</html>
