@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(inkscape --version)",
+      "Bash(magick --version)",
+      "Bash(convert --version)",
+      "Bash(python -c \"from PIL import Image; print\\('pillow ok'\\)\")",
+      "Bash(python3 -c \"from PIL import Image; print\\('pillow ok'\\)\")",
+      "WebFetch(domain:gwfh.mranftl.com)",
+      "Bash(mkdir -p /c/Users/felix/Documents/Dokumente/Coding/Lolax/fonts)",
+      "Bash(curl -sL \"https://fonts.gstatic.com/s/cormorantgaramond/v21/co3umX5slCNuHLi8bLeY9MK7whWMhyjypVO7abI26QOD_v86KnTOig.woff2\" -o cormorant-garamond-400.woff2)",
+      "Bash(curl -sL \"https://fonts.gstatic.com/s/cormorantgaramond/v21/co3smX5slCNuHLi8bLeY9MK7whWMhyjYrGFEsdtdc62E6zd58jD-iNM8.woff2\" -o cormorant-garamond-400italic.woff2)",
+      "Bash(curl -sL \"https://fonts.gstatic.com/s/cormorantgaramond/v21/co3umX5slCNuHLi8bLeY9MK7whWMhyjypVO7abI26QOD_s06KnTOig.woff2\" -o cormorant-garamond-500.woff2)",
+      "Bash(curl -sL \"https://fonts.gstatic.com/s/cormorantgaramond/v21/co3umX5slCNuHLi8bLeY9MK7whWMhyjypVO7abI26QOD_iE9KnTOig.woff2\" -o cormorant-garamond-600.woff2)",
+      "Bash(python3 *)",
+      "Bash(git rm *)"
+    ]
+  }
+}
