@@ -65,13 +65,16 @@
       <div class="footer__inner">
         <p class="footer__copy">© 2026 Lolax &nbsp;·&nbsp; Felix Kempf &nbsp;·&nbsp; Leipzig</p>
         <nav class="footer__links" aria-label="Rechtliche Links">
-          <a href="impressum.html" class="footer__link">Impressum</a>
+          <a href="impressum.html"   class="footer__link">Impressum</a>
           <a href="datenschutz.html" class="footer__link">Datenschutz</a>
+          <button type="button" class="footer__link" data-consent-open>Cookie-Einstellungen</button>
         </nav>
       </div>
     </div>
   </footer>
 
+  <div id="consent-root" hidden></div>
+  <script src="consent.js"></script>
   <script src="main.js"></script>
 </body>
 </html>
