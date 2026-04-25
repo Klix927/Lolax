@@ -1,27 +1,17 @@
-# Ignore node_modules, logs, OS files, and common editor files
-node_modules/
-*.log
+# Claude Code
+CLAUDE.md
+.claude/
+
+# OS
 .DS_Store
 Thumbs.db
+
+# Editor
 .vscode/
-.env
-*.env
-*.pyc
-__pycache__/
-# Ignore project-specific files
-claude.md
-# Ignore build and cache
-/dist/
-/build/
-.cache/
-# Ignore system files
 *.swp
 *.swo
-# Ignore backup files
 *~
-# Ignore coverage reports
-coverage/
-*.cover
-# Ignore dependency directories
-.venv/
-venv/
+
+# Env
+.env
+*.env

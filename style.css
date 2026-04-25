@@ -442,10 +442,6 @@ p { color: var(--clr-text-2); }
   box-shadow: 0 6px 24px rgba(42,95,74,0.12);
 }
 
-.product-card--placeholder {
-  opacity: 0.5;
-}
-
 /* Badge */
 .badge {
   display: inline-flex;
@@ -460,7 +456,6 @@ p { color: var(--clr-text-2); }
   border-radius: 100px;
 }
 .badge--soon { background-color: var(--clr-accent-bg); color: var(--clr-accent); }
-.badge--wip  { background-color: var(--clr-bg-alt); color: var(--clr-text-3); }
 .badge__dot  { width: 5px; height: 5px; border-radius: 50%; background-color: currentColor; flex-shrink: 0; }
 
 .product-card__name {
@@ -470,7 +465,6 @@ p { color: var(--clr-text-2); }
   line-height: 1.2;
   color: var(--clr-text);
 }
-.product-card--placeholder .product-card__name { color: var(--clr-text-2); }
 
 .product-card__desc {
   font-size: 0.9rem;
@@ -609,7 +603,8 @@ p { color: var(--clr-text-2); }
 .legal-page__back:hover      { color: var(--clr-text); }
 .legal-page__back:focus-visible { outline: 2px solid var(--clr-accent); }
 
-.legal-page__title { margin-bottom: var(--space-lg); }
+.legal-page__title { margin-bottom: 0.3em; }
+.legal-page__subtitle { margin-top: 0; margin-bottom: var(--space-lg); }
 
 .legal-content { max-width: 44rem; }
 
